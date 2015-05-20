@@ -1,0 +1,32 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+h1{
+	margin:20px 0 20px 15px;
+}
+
+form {
+	margin-bottom:20px;
+	padding:0px;
+	input{
+		&[type="search"]{
+			border-radius: 3px;
+			border:1px solid rgba(0,0,0,0.5);
+			padding:10px;
+		}
+		&[type="submit"]{
+			padding: 10px;
+			margin-left: 10px;
+			border-radius: 3px;
+			border: 1px solid rgba(0,0,0,0.2);
+		}
+	}
+}
+
+ul{
+	padding:0;
+	margin-left: 15px;
+	list-style-type: none;
+}

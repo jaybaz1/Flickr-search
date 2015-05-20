@@ -1,0 +1,15 @@
+<form name="tagSearch" class="col-xs-12">
+	<input type="search" placeholder="Search flickr using tags" ng-model="tag" class="col-xs-8" />
+	<input type="submit" value="Search" ng-click="search(tag)"/>
+</form>
+
+<ul ng-show="imagesAvailable">
+	<li ng-repeat="image in data.items" class="col-xs-12 col-md-4">
+		<div>
+			<img ng-src="{{image.media.m}}" />
+			<p>{{image.tags}}</p>
+		</div>
+	</li>
+</ul>
+
+<p ng-hide="imagesAvailable">Sorry no images returned.</p>
